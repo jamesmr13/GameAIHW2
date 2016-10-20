@@ -54,7 +54,7 @@ public class ConeCheckOnPath : PathFollow {
     }
 	}
 
-    protected IEnumerator Avoid()
+    protected virtual IEnumerator Avoid()
     {
         while(true)
         {

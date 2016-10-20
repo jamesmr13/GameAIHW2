@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CollisionPredictonPath : ConeCheckonPath {
+public class CollisionPredictonPath : ConeCheckOnPath {
 
     public float collision_tolerance = 2.0f;
 
@@ -25,7 +25,7 @@ public class CollisionPredictonPath : ConeCheckonPath {
         float closest = collision_tolerance;
         
         float future = 0.0f;
-        for(future; future < 5.0f; future += 0.1f)
+        for(future = 0.0f; future < 5.0f; future += 0.1f)
         {
             // find the future positions
             Vector3 position_a = a.transform.position + body_a.velocity * future;
