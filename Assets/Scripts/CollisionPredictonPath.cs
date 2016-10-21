@@ -7,6 +7,9 @@ public class CollisionPredictonPath : ConeCheckOnPath {
 
 	// Use this for initialization
 	void Start () {
+        my_body = this.GetComponent<Rigidbody>();
+        StartCoroutine(Avoid());
+        StartCoroutine(Move());
 	
 	}
 	
